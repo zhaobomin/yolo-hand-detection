@@ -42,7 +42,8 @@ class YOLO:
                 # the current object detection
                 scores = detection[5:]
                 classID = np.argmax(scores)
-                confidence = scores[classID]
+                #confidence = scores[classID] # it's a bug , yolov3 返回的结果是 box(0, 1, 2, 3), confidence(4), class_scores(5:)
+                confidence = detection[4]
                 # filter out weak predictions by ensuring the detected
                 # probability is greater than the minimum probability
                 if confidence > self.confidence:
