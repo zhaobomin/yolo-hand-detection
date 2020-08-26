@@ -1,4 +1,4 @@
-# YOLO-Hand-Detection
+# YOLO-Hand-Detection Bug fix版本（原版本有bug）
 Scene hand detection for real world images.
 
 ![Hand Detection Example](readme/export.jpg)
